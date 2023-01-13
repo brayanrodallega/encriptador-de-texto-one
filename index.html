@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <img src="./assets/Vector.png" alt="Logo Alura" class="logo" />
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="subcontainer1">
+        <textarea
+          name="texto"
+          id="entradaTexto"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="advertising">
+          <figure class="adv">
+            <img
+              src="./assets/Vector interrogacion.png"
+              alt="signo de advertencia"
+            />
+            <p>Solo letras minúsculas y sin acentos</p>
+          </figure>
+        </div>
+
+        <div class="buttons">
+          <button class="primary-button encriptar">Encriptar</button>
+          <button class="secondary-button desencriptar">Desencriptar</button>
+        </div>
+      </div>
+
+      <div class="subcontainer2">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/Muñeco.png" alt="Muñeco" />
+              <h3 class="card-title">Ningún mensaje fue encontrado</h3>
+              <p class="card-text">
+                Ingresa el texto que desees encriptar o desencriptar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://linktr.ee/brayan1a1">By Brayan Rodallega</a>
+    </footer>
+  </body>
+</html>

@@ -12,10 +12,14 @@ btnEncriptar.addEventListener("click", () => {
   card.innerHTML = `
       <div class="card-body">
           <p class="card-text">${encriptar(inputTexto.value)}</p>
+      </div>
+      <div class="card-footer">
           <button class="secondary-button button-copy">Copiar</button>
       </div>
     `;
   cardContainer.appendChild(card);
+  let cardBody = document.querySelector(".card-body");
+  cardBody.style.justifyContent = "space-between";
   // Cuando se hace click en el boton de copiar se copia el texto encriptado
   card.querySelector(".button-copy").addEventListener("click", () => {
     let texto = card.querySelector("p").innerText;
@@ -52,10 +56,14 @@ btnDesencriptar.addEventListener("click", () => {
   card.innerHTML = `
         <div class="card-body">
             <p class="card-text">${desencriptar(inputTexto.value)}</p>
-            <button class="secondary-button button-copy">Copiar</button>
+        </div>
+        <div class="card-footer">
+          <button class="secondary-button button-copy">Copiar</button>
         </div>
       `;
   cardContainer.appendChild(card);
+  let cardBody = document.querySelector(".card-body");
+  cardBody.style.justifyContent = "space-between";
   // Cuando se hace click en el boton de copiar se copia el texto desencriptado
   card.querySelector(".button-copy").addEventListener("click", () => {
     let texto = card.querySelector("p").innerText;

@@ -36,10 +36,12 @@
 
 html {
   font-size: 10px;
+  height: 100%;
 }
 
 body {
   background: var(--bg);
+  height: 100%;
 }
 
 a {
@@ -62,8 +64,21 @@ header {
   flex-direction: column;
 }
 
+.subcontainer1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.subcontainer2 {
+  height: 100%;
+}
+
 .container #entradaTexto {
   width: 100%;
+  height: 100%;
   border: none;
   background: var(--bg);
   font-size: 2.5rem;
@@ -133,6 +148,10 @@ header {
   background-color: var(--light-blue-100);
 }
 
+.card-footer {
+  width: 100%;
+}
+
 .button-copy {
   width: 90% !important;
 }
@@ -157,7 +176,6 @@ header {
   align-items: center;
   gap: 1.6rem;
   padding: 1.6rem;
-  margin-top: 1.6rem;
   text-align: center;
   box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
   overflow: scroll;
@@ -171,7 +189,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  overflow: auto;
 }
 
 .card .card-text {
@@ -273,7 +292,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100%;
     gap: 3rem;
   }
 
@@ -282,6 +301,10 @@ footer {
     width: 30%;
     overflow: auto;
     justify-content: space-between;
+  }
+
+  .container #entradaTexto {
+    padding: 0;
   }
 
   .card-container {
@@ -312,7 +335,7 @@ footer {
   }
 
   footer {
-    justify-content: flex-end;
-    padding-right: 6rem;
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 }

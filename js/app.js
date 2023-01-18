@@ -5,7 +5,11 @@ let btnEncriptar = document.querySelector(".encriptar");
 let btnDesencriptar = document.querySelector(".desencriptar");
 
 btnEncriptar.addEventListener("click", () => {
-  // Cuando se hace click de crea una card que conteiene el texto encriptado y un boton para copiar el texto
+  
+  if (inputTexto.value === "") {
+    alert("El campo de texto no puede estar vacío");
+    return;
+  }
   cardContainer.innerHTML = "";
   let card = document.createElement("div");
   card.classList.add("card");
@@ -50,6 +54,11 @@ function encriptar(texto) {
 }
 
 btnDesencriptar.addEventListener("click", () => {
+  
+  if (inputTexto.value === "") {
+    alert("El campo de texto no puede estar vacío");
+    return;
+  }
   cardContainer.innerHTML = "";
   let card = document.createElement("div");
   card.classList.add("card");

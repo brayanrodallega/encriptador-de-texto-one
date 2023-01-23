@@ -5,7 +5,6 @@ let btnEncriptar = document.querySelector(".encriptar");
 let btnDesencriptar = document.querySelector(".desencriptar");
 
 btnEncriptar.addEventListener("click", () => {
-  
   if (inputTexto.value === "") {
     alert("El campo de texto no puede estar vacío");
     return;
@@ -21,6 +20,7 @@ btnEncriptar.addEventListener("click", () => {
           <button class="secondary-button button-copy">Copiar</button>
       </div>
     `;
+  inputTexto.value = "";
   cardContainer.appendChild(card);
   let cardBody = document.querySelector(".card-body");
   cardBody.style.justifyContent = "space-between";
@@ -54,7 +54,6 @@ function encriptar(texto) {
 }
 
 btnDesencriptar.addEventListener("click", () => {
-  
   if (inputTexto.value === "") {
     alert("El campo de texto no puede estar vacío");
     return;
@@ -70,6 +69,7 @@ btnDesencriptar.addEventListener("click", () => {
           <button class="secondary-button button-copy">Copiar</button>
         </div>
       `;
+  inputTexto.value = "";
   cardContainer.appendChild(card);
   let cardBody = document.querySelector(".card-body");
   cardBody.style.justifyContent = "space-between";

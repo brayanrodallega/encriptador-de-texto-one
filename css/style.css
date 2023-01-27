@@ -222,8 +222,40 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.6rem;
   font-size: 1.5rem;
 }
+
+footer #creatorName {
+  color: var(--gray-500);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer #social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+footer #social-medias ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+footer #social-medias ul li {
+  list-style: none;
+}
+
+footer #social-medias ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media (min-width: 768px) {
   header {
